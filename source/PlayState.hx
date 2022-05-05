@@ -1741,10 +1741,10 @@ class PlayState extends MusicBeatState
 				var member = PlayState.strumLineNotes.members[i];
 				var theValue = Note.swagWidth * (i % 4);
 				if (i >= 4) {
-					luaModchart.setVar("defaultStrum" + i + "X", 50 + theValue);
+				//	luaModchart.setVar("defaultStrum" + i + "X", 50 + theValue);
 					FlxTween.tween(member, {x: 50 + theValue}, 1, {ease: FlxEase.linear});
 				} else {
-					luaModchart.setVar("defaultStrum" + i + "X", (50 + (FlxG.width / 2)) + theValue);
+				//	luaModchart.setVar("defaultStrum" + i + "X", (50 + (FlxG.width / 2)) + theValue);
 					FlxTween.tween(member, {x: (50 + (FlxG.width / 2)) + theValue}, 1, {ease: FlxEase.linear});
 				}
 			}
@@ -1774,10 +1774,10 @@ class PlayState extends MusicBeatState
 				var member = PlayState.strumLineNotes.members[i];
 				var theValue = Note.swagWidth * (i % 4);
 				if (i <= 3) {
-					luaModchart.setVar("defaultStrum" + i + "X", 50 + theValue);
+				//	luaModchart.setVar("defaultStrum" + i + "X", 50 + theValue);
 					FlxTween.tween(member, {x: 50 + theValue}, 1, {ease: FlxEase.linear});
 				} else {
-					luaModchart.setVar("defaultStrum" + i + "X", (50 + (FlxG.width / 2)) + theValue);
+				//	luaModchart.setVar("defaultStrum" + i + "X", (50 + (FlxG.width / 2)) + theValue);
 					FlxTween.tween(member, {x: (50 + (FlxG.width / 2)) + theValue}, 1, {ease: FlxEase.linear});
 				}
 			}
